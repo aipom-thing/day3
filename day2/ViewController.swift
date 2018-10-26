@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+//        performSegue(withIdentifier: "signUpSegue", sender: self)
+        
         let viewTest = UIView(frame: CGRect(x:100, y:0, width:100, height:100))
         viewTest.backgroundColor = UIColor.black
         viewTest.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0, alpha: 1)
@@ -35,6 +37,12 @@ class ViewController: UIViewController {
             information.backgroundColor = UIColor.green
             information.textColor = UIColor.black
             information.text = "YEAY! \(username.text ?? "") got smarter!"
+            
+            let homeViewController = HomeViewController()
+//            let navigationController = UINavigationController(rootViewController: homeViewController)
+            homeViewController.username = username.text
+            self.present(homeViewController, animated: true, completion: nil)
+            
         }else{
             information.backgroundColor = UIColor.red
             information.textColor = UIColor.white
@@ -43,9 +51,18 @@ class ViewController: UIViewController {
     }
 // }
     
-    @IBAction func gesture(_ sender: Any) {
-        print("touch!")
-    }
-    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if let viewcontroller = segue.destination as? HomeViewController{
+//
+//        }
+//    }
+//    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+//        if identifier == "homeSegue"{
+//            if let username = username.text, let pass = password.text, !username.isEmpty, !pass.isEmpty{
+//                return true
+//            }
+//        }
+//        return false
+//    }
 }
 
