@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-//        greeting.text = username
+        greeting.text = "Welcome, " + (username ?? "")
     }
     
     

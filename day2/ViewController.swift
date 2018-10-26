@@ -38,11 +38,12 @@ class ViewController: UIViewController {
             information.textColor = UIColor.black
             information.text = "YEAY! \(username.text ?? "") got smarter!"
             
-            let homeViewController = HomeViewController()
-//            let navigationController = UINavigationController(rootViewController: homeViewController)
-            homeViewController.username = username.text
-            self.present(homeViewController, animated: true, completion: nil)
-            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController{
+//              let navigationController = UINavigationController(rootViewController: homeViewController)
+                homeViewController.username = username.text
+                self.present(homeViewController, animated: true, completion: nil)
+            }
         }else{
             information.backgroundColor = UIColor.red
             information.textColor = UIColor.white

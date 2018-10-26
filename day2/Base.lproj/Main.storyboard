@@ -116,13 +116,13 @@
         <!--Home-->
         <scene sceneID="NOL-Dd-Oa4">
             <objects>
-                <viewController title="Home" id="w9T-tG-MuW" customClass="HomeViewController" customModule="day2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" title="Home" id="w9T-tG-MuW" customClass="HomeViewController" customModule="day2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kCo-De-VEq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIL-jG-FQg">
-                                <rect key="frame" x="152" y="323" width="71" height="21"/>
+                                <rect key="frame" x="16" y="323" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -139,7 +139,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJ3-TA-wI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="980" y="815"/>
+            <point key="canvasLocation" x="980" y="814.54272863568224"/>
         </scene>
         <!--Signup View Controller-->
         <scene sceneID="Gx6-4S-RzC">
